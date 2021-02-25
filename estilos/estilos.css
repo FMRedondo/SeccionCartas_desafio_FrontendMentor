@@ -1,0 +1,177 @@
+.texto{
+    width: 50%;
+    margin:100px auto;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--gris-oscuro);
+}
+
+.titulo__secundario{
+    font-size:39px;
+}
+
+.parrafo{
+    width: 45%;
+    margin: 30px auto;
+    text-align: center;
+    font-weight: 500;
+    color: var(--gris-claro);
+}
+
+.cartas{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    height: 60vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 50px;
+}
+
+.carta{
+    width: 100%;
+    height: 22vh;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px var(--gris-claro);
+    transition: all 1s;
+}
+
+.carta:hover{
+    transform: scale(1.1);
+}
+
+.equipo{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    border-top: 5px solid var(--color-rojo);
+}
+
+.supervisor{
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    border-top: 5px solid var(--color-cyan);
+}
+
+.karma{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    border-top: 5px solid var(--naranja);
+}
+
+.calculadora{
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    border-top: 5px solid var(--azul);
+}
+
+.contenido__carta{
+    display: flex;
+    flex-direction: column;
+}
+
+.carta h3{
+    font-size: 25px;
+    color: var(--gris-oscuro);
+    margin: 15px 15px;
+}
+
+.carta p{
+    font-size: 15px;
+    color: var(--gris-claro);
+    margin: 10px 15px;
+    width: 70%;
+}
+
+.carta img{
+    width: 15%;
+    float: right;
+    margin-right: 30px;
+}
+
+footer{
+    grid-column:0 / 4 ;
+    grid-row: 5 / 6 ;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1440px){
+
+    .texto{
+        width: 80%;
+        margin:100px auto;
+        text-align: center;
+    }
+    
+    .titulo{
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--gris-oscuro);
+    }
+    
+    .titulo__secundario{
+        font-size:29px;
+    }
+    
+    .parrafo{
+        width: 70%;
+        margin: 30px auto;
+        text-align: center;
+        font-weight: 500;
+        color: var(--gris-claro);
+    }
+
+
+    .cartas{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .carta{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .carta img{
+        position: relative;
+        right: 0;
+        bottom: 0;
+   
+    }
+
+    .equipo{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2 ;
+    }
+    
+    .supervisor{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .karma{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .calculadora{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .footer{
+        width: 80%;
+        margin: 50px auto;
+        padding-bottom: 40px;
+    }
+
+
+}
